@@ -4,8 +4,8 @@ mod kafka;
 mod routing;
 mod queries;
 
-use axum::{routing::{get, post}, Router};
-use routing::{init_router, send_message};
+// use axum::{routing::{get, post}, Router};
+use routing::init_router;
 use shuttle_service::{DeploymentMetadata, SecretStore};
 use sqlx::PgPool;
 use state::AppState;
